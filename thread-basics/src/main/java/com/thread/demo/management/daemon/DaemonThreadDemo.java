@@ -1,4 +1,4 @@
-package com.thread.demo.daemon;
+package com.thread.demo.management.daemon;
 
 public class DaemonThreadDemo extends Thread  {
     public static void main(String[] args) {

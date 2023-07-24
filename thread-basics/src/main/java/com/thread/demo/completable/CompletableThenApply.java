@@ -23,5 +23,9 @@ public class CompletableThenApply {
 
         String result = future.get();
         System.out.println("result:" + result);
+
+
+
+
     }
 }

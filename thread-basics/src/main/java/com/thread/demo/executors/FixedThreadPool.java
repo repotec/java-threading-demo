@@ -1,8 +1,9 @@
-package com.thread.demo.pool.types;
+package com.thread.demo.executors;
 
 import com.thread.demo.pool.SleepingWorker;
 
 import java.util.concurrent.*;
+import java.util.concurrent.Executors;
 
 public class FixedThreadPool {
     public static void main(String[] args) throws InterruptedException {

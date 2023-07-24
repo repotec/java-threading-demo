@@ -12,6 +12,7 @@ public class CompletableRunAsync {
         CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(new Runnable() {
                 @Override
                 public void run() {
+                    // Simulate a long-running Job
                     Utils.doSleep(1);
                     System.out.println("I'll run in a separate thread than the main thread.");
                 }

@@ -1,6 +1,6 @@
-package com.thread.demo;
+package com.thread.demo.management.daemon;
 
-public class DaemonThread {
+public class DaemonThread2 {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(new CustomThread(10), "thread-1");
         Thread t2 = new Thread(new CustomThread(2), "thread-2");

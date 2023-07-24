@@ -1,4 +1,4 @@
-package com.thread.demo;
+package com.thread.demo.management;
 
 public class RunVsStart {
     public static void main(String[] args) {
