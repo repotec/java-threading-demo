@@ -1,4 +1,4 @@
-package com.thread.demo.executors;
+package com.thread.demo.executors.bool;
 
 import com.thread.demo.pool.SleepingWorker;
 
@@ -9,29 +9,30 @@ import java.util.concurrent.*;
  */
 public class CachedThreadPool {
     public static void main(String[] args) {
-       ExecutorService executor1 = Executors.newCachedThreadPool();
+        ExecutorService executor1 = Executors.newCachedThreadPool();
 
         for (int i = 0; i < 100; i++) {
             executor1.execute(new SleepingWorker(i));
         }
 
-
-        ThreadPoolExecutor executor =  (ThreadPoolExecutor) Executors.newCachedThreadPool();
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
 
         executor.submit(() -> {
-            Thread.sleep(1000);
+            Thread.sleep(1000); //do some works
             return null;
         });
         executor.submit(() -> {
-            Thread.sleep(1000);
+            Thread.sleep(1000); //do some works
             return null;
         });
         executor.submit(() -> {
-            Thread.sleep(1000);
+            Thread.sleep(1000); //do some works
             return null;
         });
 
         System.out.println("<" + executor.getPoolSize() + "> pool size should be 3");
         System.out.println("<" + executor.getQueue().size() + "> pool size should be 0");
+
+        executor.shutdown();
     }
 }
