@@ -1,4 +1,4 @@
-package com.thread.demo.atomic;
+package com.thread.demo.visibility.atomic;
 
 public class UnsafeVariableIncrement {
     static class Counter {

@@ -14,17 +14,18 @@ public class DaemonThreadDemo extends Thread  {
         t3.setDaemon(true);
         t3.start();
     }
+
+    static class  CustomDaemonThread extends Thread {
+        public CustomDaemonThread(String name) {
+            super(name);
+        }
+
+        public void run() {
+            if (Thread.currentThread().isDaemon())
+                System.out.println(getName() + " is Daemon thread");
+            else
+                System.out.println(getName() + " is User thread");
+        }
+    }
 }
 
-class  CustomDaemonThread extends Thread {
-    public CustomDaemonThread(String name) {
-        super(name);
-    }
-
-    public void run() {
-        if (Thread.currentThread().isDaemon())
-            System.out.println(getName() + " is Daemon thread");
-        else
-            System.out.println(getName() + " is User thread");
-    }
-}

@@ -1,11 +1,8 @@
-package com.thread.demo.atomic;
-
-import com.thread.demo.ThreadRacing;
+package com.thread.demo.visibility.atomic;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.logging.Logger;
 
 public class IntegerMultiThreadsIncremental {
     public static void main(String[] args) throws InterruptedException {

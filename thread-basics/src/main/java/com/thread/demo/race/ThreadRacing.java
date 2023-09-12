@@ -1,4 +1,4 @@
-package com.thread.demo;
+package com.thread.demo.race;
 
 import java.util.ArrayList;
 import java.util.List;

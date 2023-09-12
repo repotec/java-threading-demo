@@ -1,4 +1,4 @@
-package com.thread.demo.exception;
+package com.thread.demo.management.exception;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.thread.demo.atomic;
+package com.thread.demo.visibility.atomic;
 
 import com.thread.demo.synchronize.countdownlatch.CountDownLatchSample2;
 

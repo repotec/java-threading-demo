@@ -1,4 +1,4 @@
-package com.thread.demo.atomic;
+package com.thread.demo.visibility.atomic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
